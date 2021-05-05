@@ -1,7 +1,10 @@
-.PHONY: fmt lint test
+.PHONY: fmt lint test test-mutation
 
 test:
 	go test -v -race
+
+test-mutation:
+	go-mutesting ./...
 
 lint:
 	golangci-lint run
