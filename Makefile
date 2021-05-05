@@ -4,7 +4,7 @@ test:
 	go test -v -race
 
 test-mutation:
-	go mod tidy
+	go get -t -v github.com/zimmski/go-mutesting/...
 	go-mutesting ./...
 
 lint:
