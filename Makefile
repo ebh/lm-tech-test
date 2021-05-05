@@ -4,6 +4,7 @@ test:
 	go test -v -race
 
 test-mutation:
+	go mod tidy
 	go-mutesting ./...
 
 lint:
