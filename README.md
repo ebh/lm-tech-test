@@ -50,3 +50,6 @@ thing to do, so I used the [unicode.ToLower()](https://pkg.go.dev/unicode#ToLowe
 
 Also, the specs were a bit unclear about what to do when it came to empty strings. So I just made my own decision and
 documented it via tests.
+
+I also added some CI/CD to run the tests against multiple versions of Go and different operating systems. You can 
+access it by clicking on this badge -> [![Continuous Integration](https://github.com/ebh/lm-tech-test/actions/workflows/ci.yml/badge.svg)](https://github.com/ebh/lm-tech-test/actions/workflows/ci.yml)
