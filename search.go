@@ -9,10 +9,6 @@ func SearchCaseInsensitive(textToSearch, subtext string) []int {
 }
 
 func searchCaseSensitive(textToSearch, subtext string) []int {
-	if len(textToSearch) == 0 {
-		return nil
-	}
-
 	if len(subtext) == 0 {
 		return nil
 	}
